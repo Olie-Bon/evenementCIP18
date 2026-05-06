@@ -216,6 +216,70 @@
       letter-spacing: 1.5px;
     }
 
+    /* CARTE */
+    .carte-section {
+      background: var(--dark);
+      padding: 0 24px 40px;
+    }
+    .carte-section .section-title { margin-bottom: 16px; }
+    .carte-wrapper {
+      max-width: 700px;
+      margin: 0 auto;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .carte-wrapper iframe {
+      width: 100%;
+      height: 280px;
+      display: block;
+      border: none;
+    }
+    .adresse-bloc {
+      max-width: 700px;
+      margin: 14px auto 0;
+      background: rgba(255,255,255,0.06);
+      border-radius: 14px;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .adresse-bloc .info-icon { font-size: 22px; }
+    .adresse-text { font-size: 14px; font-weight: 700; color: var(--blanc); line-height: 1.4; }
+    .adresse-text span { color: rgba(255,255,255,0.5); font-weight: 600; font-size: 13px; }
+
+    /* CALENDAR */
+    .calendar-section {
+      background: var(--dark);
+      padding: 0 24px 40px;
+    }
+    .cal-btns {
+      max-width: 700px;
+      margin: 0 auto;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .btn-cal {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 24px;
+      border-radius: 50px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 14px;
+      font-weight: 800;
+      text-decoration: none;
+      transition: transform 0.15s, box-shadow 0.15s;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+    }
+    .btn-cal:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.4); }
+    .btn-gcal { background: #fff; color: #1a1a2e; }
+    .btn-apple { background: #1a1a2e; color: #fff; border: 1px solid rgba(255,255,255,0.2); }
+
     /* FOOTER */
     footer {
       background: #0d0d1a;
@@ -313,6 +377,43 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- CARTE -->
+  <section class="carte-section">
+    <div class="section-title">Où nous trouver ?</div>
+    <div class="carte-wrapper">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.0!2d5.3678!3d43.2985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c0b9b9b9b9b9%3A0x0!2sCentre+Social+Beaussenque%2C+Marseille!5e0!3m2!1sfr!2sfr!4v1620000000000!5m2!1sfr!2sfr"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <div class="adresse-bloc">
+      <div class="info-icon">📍</div>
+      <div class="adresse-text">
+        Centre Social Beaussenque<br>
+        <span>Quartier du Panier · 13002 Marseille</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADD TO CALENDAR -->
+  <section class="calendar-section">
+    <div class="section-title">Ajouter à mon agenda</div>
+    <div class="cal-btns">
+      <a class="btn-cal btn-gcal"
+        href="https://www.google.com/calendar/render?action=TEMPLATE&text=Le+Panier+pour+l%27Emploi&dates=20260603T120000Z/20260603T140000Z&details=Mini-forum+emploi+%7C+Rencontres+recruteurs%2C+ateliers+CV%2C+orientation&location=Centre+Social+Beaussenque%2C+13002+Marseille"
+        target="_blank">
+        📅 Google Calendar
+      </a>
+      <a class="btn-cal btn-apple"
+        href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20260603T140000%0ADTEND:20260603T160000%0ASUMMARY:Le+Panier+pour+l'Emploi%0ALOCATION:Centre+Social+Beaussenque%2C+13002+Marseille%0ADESCRIPTION:Mini-forum+emploi+%7C+Rencontres+recruteurs%2C+ateliers+CV%2C+orientation%0AEND:VEVENT%0AEND:VCALENDAR"
+        download="panier-emploi.ics">
+        🍎 Apple Calendar
+      </a>
     </div>
   </section>
 
