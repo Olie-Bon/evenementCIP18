@@ -280,6 +280,46 @@
     .btn-gcal { background: #fff; color: #1a1a2e; }
     .btn-apple { background: #1a1a2e; color: #fff; border: 1px solid rgba(255,255,255,0.2); }
 
+    /* PARTENAIRES */
+    .partenaires {
+      background: #0d0d1a;
+      padding: 40px 24px;
+    }
+    .partenaires .section-title { margin-bottom: 28px; }
+    .partenaires-grid {
+      max-width: 700px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 14px;
+    }
+    .partenaire-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 16px 18px;
+      border-left: 3px solid var(--bleu);
+    }
+    .partenaire-card:nth-child(2) { border-left-color: var(--rose); }
+    .partenaire-card:nth-child(3) { border-left-color: var(--vert); }
+    .partenaire-card:nth-child(4) { border-left-color: var(--jaune); }
+    .partenaire-card:nth-child(5) { border-left-color: var(--bleu); }
+    .partenaire-card:nth-child(6) { border-left-color: var(--rose); }
+    .partenaire-card:nth-child(7) { border-left-color: var(--vert); }
+    .partenaire-card:nth-child(8) { border-left-color: var(--jaune); }
+    .partenaire-nom {
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--blanc);
+      margin-bottom: 6px;
+    }
+    .partenaire-desc {
+      font-size: 12px;
+      color: rgba(255,255,255,0.55);
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
     /* FOOTER */
     footer {
       background: #0d0d1a;
@@ -356,13 +396,6 @@
           </div>
         </div>
         <div class="prog-item">
-          <div class="prog-emoji">📄</div>
-          <div>
-            <div class="prog-text">Ateliers CV</div>
-            <div class="prog-sub">Conseils personnalisés pour optimiser ton CV</div>
-          </div>
-        </div>
-        <div class="prog-item">
           <div class="prog-emoji">🧭</div>
           <div>
             <div class="prog-text">Informations & Orientation</div>
@@ -414,6 +447,45 @@
         download="panier-emploi.ics">
         🍎 Apple Calendar
       </a>
+    </div>
+  </section>
+
+  <!-- PARTENAIRES -->
+  <section class="partenaires">
+    <div class="section-title">Nos partenaires</div>
+    <div class="partenaires-grid">
+      <div class="partenaire-card">
+        <div class="partenaire-nom">France Travail</div>
+        <div class="partenaire-desc">Service public de l'emploi qui accompagne demandeurs d'emploi et employeurs. Conseils, offres d'emploi, formations et aides financières.</div>
+      </div>
+      <div class="partenaire-card">
+        <div class="partenaire-nom">Mission Locale Marseille</div>
+        <div class="partenaire-desc">Accompagne les jeunes de 16 à 25 ans dans leur insertion professionnelle et sociale. Orientation, formation, emploi et accès aux droits.</div>
+      </div>
+      <div class="partenaire-card">
+        <div class="partenaire-nom">E2C Marseille — École de la 2e Chance</div>
+        <div class="partenaire-desc">Formation gratuite et rémunérée pour les 16-25 ans sans diplôme ni emploi. Filières restauration, pâtisserie, transport-logistique avec accompagnement personnalisé.</div>
+      </div>
+      <div class="partenaire-card">
+        <div class="partenaire-nom">Léo Lagrange Marseille</div>
+        <div class="partenaire-desc">Association d'éducation populaire qui recrute et forme aux métiers de l'animation et de l'encadrement. Offres concrètes en CDI et CDD pour les jeunes.</div>
+      </div>
+      <div class="partenaire-card">
+        <div class="partenaire-nom">Service Civique</div>
+        <div class="partenaire-desc">Dispositif national pour s'engager dans une mission d'intérêt général de 6 à 12 mois, indemnisée, pour les 16-25 ans. Une expérience concrète pour construire son projet.</div>
+      </div>
+      <div class="partenaire-card">
+        <div class="partenaire-nom">Le Carburateur</div>
+        <div class="partenaire-desc">Espace d'accompagnement et de résidence pour jeunes entreprises et porteurs de projets. Suivi personnalisé, mise en réseau et espaces de travail mutualisés.</div>
+      </div>
+      <div class="partenaire-card">
+        <div class="partenaire-nom">Horizon Marin — REC Innovation</div>
+        <div class="partenaire-desc">Programme d'immersion de 9 à 12 semaines pour les 18-25 ans autour des métiers de la transition écologique et du littoral. Formation, visites et accompagnement de projet.</div>
+      </div>
+      <div class="partenaire-card">
+        <div class="partenaire-nom">CQFD</div>
+        <div class="partenaire-desc">Réseau de 16 associations marseillaises du secteur aide et soin à domicile. Formations, accompagnement à l'emploi et offres de recrutement dans les métiers du service à la personne.</div>
+      </div>
     </div>
   </section>
 
